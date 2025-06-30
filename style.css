@@ -57,7 +57,7 @@ li a::before {
   top: 25px;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0, 158, 255), rgb(255, 0, 255));
+  background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 li a:hover::before {
   width: 100%;
@@ -73,12 +73,12 @@ li a:hover::before {
   cursor: pointer;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0, 158, 255), rgb(255, 0, 255));
+  background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
 .visit-btn:hover {
   transform: scale(1.03);
-  background: linear-gradient(to right, rgb(0, 158, 255), rgb(255, 0, 255));
+  background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
 #menu-icon {
@@ -133,7 +133,7 @@ section {
 }
 
 .info-box span {
-  background: linear-gradient(to right, rgb(0, 158, 255), rgb(255, 0, 255));
+  background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -227,7 +227,7 @@ section {
 .grid-card span {
   font-size: 1.5rem;
   font-weight: 500;
-  background: linear-gradient(to right, #009dff, #ff00ff);
+  background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
   background-clip: text;
   color: transparent;
 }
@@ -239,7 +239,7 @@ section {
   background-color: rgb(219, 219, 219);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #009dff, #ff00ff);
+  background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
 /*----------------------------------------------------PROJECTS SECTION----------------------------------------------------*/
@@ -326,14 +326,25 @@ section {
 /*----------------------------------------------------CONTACT AND FOOTER----------------------------------------------------*/
 
 .input-box{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 2rem;
-    margin-top: 5rem;
-     
+    margin-top: 5rem; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
 }
 
 .input-box input{
@@ -352,13 +363,7 @@ section {
     position: relative;
 }
 
-.input i{
-    position: absolute;
-    font-size: 4rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%,-50%);
-}
+
 
 
 footer{
@@ -407,9 +412,7 @@ footer ul li a{
     .input input::placeholder{
         font-size: 2.5rem;
     }
-    .input-box i{
-        font-size: 2.5rem;
-    }
+    
 }
 
 
@@ -435,9 +438,6 @@ footer ul li a{
     .input input::placeholder{
         font-size: 1.5rem;
     }   
-    .input-box i{
-        display: none;
-    } 
     .grid{
         grid-template-columns: repeat(1,1fr);
     }
