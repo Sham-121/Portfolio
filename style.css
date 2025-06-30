@@ -8,7 +8,7 @@
   list-style: none;
 }
 
-/*HEADER*/
+/*-------------------------------------------------------HEADER-----------------------------------------------------*/
 header {
   position: fixed;
   top: 1rem;
@@ -86,7 +86,7 @@ li a:hover::before {
   display: none;
 }
 
-/*About Section*/
+/*----------------------------------------------------------About Section--------------------------------------------------*/
 
 section {
   min-height: 100vh;
@@ -174,7 +174,7 @@ section {
   transition: scale(1.1);
 }
 
-/*EXPERIENCE*/
+/*-------------------------------------------------------------------EXPERIENCE-------------------------------------------------*/
 
 .section-title {
   text-align: center;
@@ -242,7 +242,7 @@ section {
   background: linear-gradient(to bottom, #009dff, #ff00ff);
 }
 
-/*PROJECTS SECTION*/
+/*----------------------------------------------------PROJECTS SECTION----------------------------------------------------*/
 
 .projects-grid {
   display: flex;
@@ -321,4 +321,70 @@ section {
   border: 1px solid black;
   background: transparent;
   cursor: pointer;
+}
+
+/*----------------------------------------------------CONTACT AND FOOTER----------------------------------------------------*/
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+     
+}
+
+.input-box input{
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 2rem 8rem;
+    font-size: 3rem;
+
+}
+
+.input-box input::placeholder{
+    font-size: 3rem;
+}
+
+.input{
+    position: relative;
+}
+
+.input i{
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 10px;
+    transform: translate(50%,-50%);
+}
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer ul li a{
+    color: black;
+    font-weight: 600;
+}
+
+.copyright{
+    font-size: 300;
+    margin-top: 2rem;
 }
